@@ -24,13 +24,9 @@ int main()
     printf("\nStrike a key when ready ...");
     getchar();
 
-    printf("\n\n0123456789012345678901234567890123456789\n");
+    printf("\n\n12345678901234567890123457890123456780\n");
 
-    int lines = 1;
-    int length = 38;
-    int decrease = 1;
-
-    int len_counter = 40; 
+    int len_counter = 38; 
     while (1) 
     {
         if (len_counter <= 4) 
@@ -41,28 +37,25 @@ int main()
         // 10 line loop 
         for (int i = 0; i < 5; i++)
         {
-            // random number line 
+            // random number line loop
             for (int i = 0; i < len_counter; i++)
             {
-                int value = rand() % (9 - 0 + 1) + 0;
+                int value = rand() % (9-0+1)+0; // rand int range 0-9
                 printf("%d", value);
             }
             usleep(my_delay);
             printf("\n");
         }
-        // break;
         len_counter--;
     }
 
-    int i;
-    for (i = 0; i < 5; i++)
+    for (int i = 0; i < 10; i++)
     {
         printf("9003\n");
         usleep(my_delay);
     }
 
     printf("\nPIN IDENTIFICATION NUMBER: 9003\n");
-
     printf("\na>");
     getchar();
 
